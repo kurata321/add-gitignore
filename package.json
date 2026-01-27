@@ -1,21 +1,18 @@
 {
+  "name": "add-gitignore",
+  "displayName": "Add gitignore menu",
   "publisher": "kurata321",
+  "version": "0.0.2",
+  "description": "Add files to .gitignore or .git/info/exclude",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/kurata321/add-gitignore.git"
   },
-  "license": "MIT",
-  "name": "add-gitignore",
-  "displayName": "add-gitignore",
-  "description": "Add files to .gitignore or .git/info/exclude",
-  "version": "0.0.1",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.108.0"
   },
-  "activationEvents": [
-    "onCommand:add-gitignore.addToGitIgnore",
-    "onCommand:add-gitignore.addToGitExclude"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
