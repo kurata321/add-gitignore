@@ -1,10 +1,16 @@
 {
+  "publisher": "kurata321",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurata321/add-gitignore.git"
+  },
+  "license": "MIT",
   "name": "add-gitignore",
   "displayName": "add-gitignore",
   "description": "Add files to .gitignore or .git/info/exclude",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.108.0"
   },
   "activationEvents": [
     "onCommand:add-gitignore.addToGitIgnore",
