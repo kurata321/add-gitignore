@@ -4,12 +4,12 @@
   "description": "Add files to .gitignore or .git/info/exclude",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.108.1"
+    "vscode": "^1.75.0"
   },
-  "categories": [
-    "Other"
+  "activationEvents": [
+    "onCommand:add-gitignore.addToGitIgnore",
+    "onCommand:add-gitignore.addToGitExclude"
   ],
-  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -22,8 +22,20 @@
         "title": "Add to .git/info/exclude"
       }
     ],
+    "submenus": [
+      {
+        "id": "add-gitignore.submenu",
+        "label": "Git Ignore"
+      }
+    ],
     "menus": {
       "explorer/context": [
+        {
+          "submenu": "add-gitignore.submenu",
+          "group": "7_modification"
+        }
+      ],
+      "add-gitignore.submenu": [
         {
           "command": "add-gitignore.addToGitIgnore",
           "group": "navigation"
