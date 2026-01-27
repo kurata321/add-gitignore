@@ -4,8 +4,9 @@ Quickly add files to `.gitignore` or `.git/info/exclude` from the VS Code explor
 
 ## Features
 
-- **Add to .gitignore**: Right-click a file and select "Add to .gitignore" to append its relative path to the workspace root's `.gitignore`.
-- **Add to .git/info/exclude**: Right-click a file and select "Add to .git/info/exclude" to ignore it locally without modifying the shared `.gitignore` file.
+- **Git Ignore Submenu**: Commands are neatly grouped under a "Git Ignore" submenu in the context menu for a cleaner experience.
+- **Add to .gitignore**: Appends the relative path of the selected file to the workspace root's `.gitignore`.
+- **Add to .git/info/exclude**: Ignores the file locally without modifying the shared `.gitignore` file.
 - **Duplicate Prevention**: The extension checks if the file path is already present in the target ignore file before adding it.
 - **Auto-formatting**: Ensures paths are added on a new line and formatted correctly.
 
@@ -13,7 +14,7 @@ Quickly add files to `.gitignore` or `.git/info/exclude` from the VS Code explor
 
 1. Open the Explorer view.
 2. Right-click on the file or folder you want to ignore.
-3. Choose either **Add to .gitignore** or **Add to .git/info/exclude**.
+3. Choose **Git Ignore**, then select either **Add to .gitignore** or **Add to .git/info/exclude**.
 
 ## Requirements
 
